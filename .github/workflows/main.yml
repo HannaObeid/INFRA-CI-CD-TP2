@@ -8,5 +8,5 @@ steps:
   - name: Build and deploy Container App
     uses: azure/container-apps-deploy-action@v1
     with:
-      # imageToDeploy: mcr.microsoft.com/azuredocs/containerapps-helloworld:latest
-      imageToDeploy: flask-tp2-app.wittyground-981f10db.northcentralusstage.azurecontainerapps.io
+      imageToDeploy: mcr.microsoft.com/azuredocs/containerapps-helloworld:latest
+      # imageToDeploy: flask-tp2-app.wittyground-981f10db.northcentralusstage.azurecontainerapps.io
