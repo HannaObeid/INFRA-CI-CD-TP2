@@ -40,7 +40,7 @@ class Item(Resource):
 
 @app.route('/')
 def hello_world():
-    return 'Hello, World!'
+    return 'Hello, World!!'
 
 api.add_resource(Item, '/item/<string:name>')
 
