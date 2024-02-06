@@ -38,6 +38,10 @@ class Item(Resource):
             item.update(data)
         return item
 
+@app.route('/')
+def hello_world():
+    return 'Hello, World!'
+
 api.add_resource(Item, '/item/<string:name>')
 
 if __name__ == '__main__':
