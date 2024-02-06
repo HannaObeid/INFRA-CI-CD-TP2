@@ -1,0 +1,15 @@
+steps:
+
+  - name: Log in to Azure
+    uses: azure/login@v1
+    with:
+      creds: {
+        "clientId": "8b959afa-c634-4fb2-995a-0d9a828d84e9",
+        "clientSecret": "Fh.8Q~AwzVaSQwKjeUXlXSp.BD1vmrlbEM6rOamf"
+      }
+
+  - name: Build and deploy Container App
+    uses: azure/container-apps-deploy-action@v1
+    with:
+      # imageToDeploy: mcr.microsoft.com/azuredocs/containerapps-helloworld:latest
+      imageToDeploy: flask-tp2-app.wittyground-981f10db.northcentralusstage.azurecontainerapps.io
